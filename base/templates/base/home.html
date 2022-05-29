@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type= "text/css" href="{% static '/CSS/home.css' %}">
+</head>
+<body>
+
+    <div id="title">
+        <img src="{% static '/image/name.svg' %}" alt="StudyDorm">
+
+    </div>
+    
+    <div id="lefter">
+        <a href="#"><img src="{% static '/image/txtrdr.svg' %}" id="txtrdr" class="button"></a>
+        <a href="#"><img src="{% static '/image/music.svg' %}" id="music" class="button"></a>
+        <a href="#"><img src="{% static '/image/reward.svg' %}" id="reward" class="button"></a>
+    </div>
+    
+    <div id="righter">
+        <a href="#"><img src="{% static '/image/lamp.svg' %}" id="lamp" class="button"></a>
+        <a href='/'><img src="{% static '/image/reminder.svg' %}" id="reminder" class="button"></a>
+        <a href="/game"><img src="{% static '/image/games.svg' %}" id="games" class="button"></a>
+    </div>
+    <style>
+        body{
+            /*background-image: linear-gradient(to bottom right, #0084CE, #00A3FF);*/
+            background-color: #0084CE;
+        }
+        
+        .button{
+            width: 200px;
+            height: auto;
+        }
+        
+        #lefter{
+            margin-left: 700px;
+        }
+        
+        #txtrdr{
+            display: block;
+            margin-top: 100px;
+        }
+        
+        #music{
+            display: block;
+            margin-top: 50px;
+        }
+        
+        #music:hover{
+            width: 250px;
+            height: auto;
+        }
+        
+        #reward{
+            display: block;
+            margin-top: 50px;
+            height: 105px;
+            width: auto;
+        }
+        
+        #reward:hover{
+            height: 130px;
+            width: auto;
+        }
+        
+        #righter{
+            position: absolute;
+            left: 1000px;
+            top: 100px;
+        }
+        
+        #lamp{
+            display: block;
+            margin-top: 10px;
+            height: 80px;
+            width: auto;
+        }
+        /*
+        #lamp:hover{
+            height: 100px;
+            width: auto;
+        }
+        */
+        #reminder{
+            height: 210px;
+            width: auto;
+        }
+        
+        #reminder:hover{
+            height: 260px;
+            width: auto;
+        }
+        
+        #games:hover{
+            width: 250px;
+            height: auto;
+        }
+        
+        
+        #title{
+            position: absolute;
+            top: 180px;
+            left: 80px;
+         
+        }
+    </style>
+</body>
+</html>
